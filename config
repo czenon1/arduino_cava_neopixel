@@ -1,0 +1,13 @@
+[general]
+bars = 16
+autosens = 1
+
+[output]
+method = raw
+data_format = ascii
+ascii_max_range = 7
+bit_format = 8bit
+
+[smoothing]
+monstercat = 1
+
