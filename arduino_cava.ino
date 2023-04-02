@@ -1,6 +1,6 @@
 #include "LedControl.h"
 
-LedControl leds = LedControl(2, 4, 3, 2);
+LedControl leds = LedControl(2, 4, 3, 3);
 
 void setup() {
   for (int i = 0; i < leds.getDeviceCount(); i++) {
@@ -21,8 +21,10 @@ void loop() {
       for (int j = 0; j <= y; j++) {
         val ^= (1 << j);
       }
-      if (x > 7) {
-        leds.setRow(1, x-8, val);
+      if (x > 15) {
+        leds.setRow(2, x-16, val);
+      } else if (x > 7) {
+        leds.setRow(1, 15-x, val);
       } else {
         leds.setRow(0, x, val);
       }
