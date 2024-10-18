@@ -1,13 +1,20 @@
 [general]
-bars = 24
-autosens = 1
+bars = 12
+autosens = 0
+
+[sensitivity]
+lower_cutoff_freq = 20
+higher_cutoff_freq = 20000
+
+[smoothing]
+monstercat = 1
+waves = 1
+gravity = 130
+noise_reduction = 77
 
 [output]
 method = raw
 data_format = ascii
 ascii_max_range = 7
 bit_format = 8bit
-
-[smoothing]
-monstercat = 1
-
+channels = mono
